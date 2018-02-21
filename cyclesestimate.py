@@ -17,7 +17,7 @@ for i in range (0,len(fmins)):
 
 avg = avg/len(fmins) #find average render time
 
-min = avg*int(frames) #How many minutes
+minutes = avg*int(frames) #How many minutes
 
 hrs = min/60 #how many hours
 
@@ -27,5 +27,5 @@ formathrs = str(int(math.floor(hrs)))+":"+str(int(round(frac*60))) #format numbe
 
 #output
 print "Estimated total render time (hrs): ", formathrs
-print "Estimated total render time (mins): ", min
+print "Estimated total render time (mins): ", minutes
 
